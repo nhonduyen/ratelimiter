@@ -9,7 +9,7 @@ const initApp = async () => {
             const data = await getData(url);
             lblResult.innerHTML = JSON.stringify(data)
         } catch (exception) {
-            console.log(exception)
+            console.log(exception) 
             lblResult.innerHTML = `Message: ${exception.message}; Stack: ${exception.stack}`
         }
     })
